@@ -1,6 +1,6 @@
 # Decentralized Gaussian Processess for Multi-Robot Systems
 
-Demonstration of the decentralized methods for Gaussian processes [1]. For further details check the paper [here](http://www.georgekontoudis.com/).
+Demonstration of decentralized methods for Gaussian processes [1]. For further details check the paper [here](http://www.georgekontoudis.com/).
 
 ## Contents
 
