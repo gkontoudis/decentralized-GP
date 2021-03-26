@@ -1,7 +1,30 @@
 # Decentralized Gaussian Processess for Multi-Robot Systems
 
-Ademonstration of the decentralized method for Gaussian processes discussedd in: "Decentralized Nested Gaussian Processes for Multi-Robot Systems," ICRA, 2021. For further details check the paper.
+A demonstration of the decentralized method for Gaussian processes discussed in [1]. For further details check the paper [here](http://www.georgekontoudis.com/).
+
+## Contents
+
+The code implements:
+* Decentralized Nested Pointwise Aggregation of Experts (DEC-NPAE)
+* Distributed Nested Pointwise Aggregation of Experts (DIST-NPAE)
+
+The source code of the factorized training and the NPAE [2] can be found in the [GRBCM](https://github.com/LiuHaiTao01/GRBCM) [3] GitHub repository.
+
+## Execution
+
+Install the [gpml toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/)
+
+Execute:
+```
+demo_2D.m
+```
+
+## References
+
+[1] G. P. Kontoudis and D. J. Stilwell, “Decentralized Nested Gaussian Processes for Multi-Robot Systems,” in *IEEE International Conference on Robotics and Automation (ICRA)*, 2021.
+[2] D. Rullière, N. Durrande, F. Bachoc, and C. Chevalier, “Nested Kriging predictions for datasets with a large number of observations,” *Statistics and Computing*, 2018.
+[3] H. Liu, J. Cai, Y. Wang, and Y. S. Ong, “Generalized robust Bayesian committee machine for large-scale Gaussian process regression,” in *International Conference on Machine Learning*, 2018.
 
 ## Notes
 
-Please open a [GitHub issue](https://github.com/gkontoudis/decentralized-GP/issues) if you encounter any problem or send me an email at g.kontoudis12@gmail.com
+Please open a [GitHub issue](https://github.com/gkontoudis/decentralized-GP/issues) if you encounter any problem or send me an email at gpkont@vt.edu.
