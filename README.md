@@ -8,7 +8,7 @@ The code implements:
 * Decentralized Nested Pointwise Aggregation of Experts (DEC-NPAE)
 * Distributed Nested Pointwise Aggregation of Experts (DIST-NPAE)
 
-The source code of the factorized training and the centralized NPAE [2] can be found in the [GRBCM](https://github.com/LiuHaiTao01/GRBCM) [3] GitHub repository.
+The source code of the factorized training and the centralized NPAE [2] can be found in the GRBCM [3] [GitHub repository](https://github.com/LiuHaiTao01/GRBCM).
 
 ## Execution
 
