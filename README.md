@@ -42,4 +42,4 @@ demo_2D_pred.m
 
 ## Notes
 
-Please open a [GitHub issue](https://github.com/gkontoudis/decentralized-GP/issues) if you encounter any problem or send me an email at gpkont@vt.edu.
+Please open a [GitHub issue](https://github.com/gkontoudis/decentralized-GP/issues) if you encounter any problem.
