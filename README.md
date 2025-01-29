@@ -25,7 +25,7 @@ demo_2D_train.m
 ```
 For decentralized GP prediction
 ```
-demo_2D_predn.m
+demo_2D_pred.m
 ```
 
 ## References
