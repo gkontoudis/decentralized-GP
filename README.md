@@ -1,6 +1,6 @@
 # Decentralized Gaussian Processess for Multi-Agent Systems
 
-Demonstration code of decentralized Gaussian process training [1,2] and prediction [3]. For further details check the paper for GP training [here](https://www.georgekontoudis.com/publications/Access24_Kontoudis_DecentralizedGPTraining.pdf) and prediction [here](https://www.georgekontoudis.com/publications/ICRA21_Kontoudis_DistributedNestedGaussianProcesses.pdf). A presentation of the GP training paper can be found [here](https://youtu.be/8Tz8ande5Gk?si=6xbKSXk0W6og94Ww) and prediction [here](https://youtu.be/kVnQ0uNy-sY).
+Demonstration code of decentralized Gaussian process training [1,2] and prediction [3]. For further details check the paper for decentralized GP training [here](https://www.georgekontoudis.com/publications/Access24_Kontoudis_DecentralizedGPTraining.pdf) and prediction [here](https://www.georgekontoudis.com/publications/ICRA21_Kontoudis_DistributedNestedGaussianProcesses.pdf). A presentation of the decentralized GP training paper can be found [here](https://youtu.be/8Tz8ande5Gk?si=6xbKSXk0W6og94Ww) and prediction [here](https://youtu.be/kVnQ0uNy-sY).
 
 ## Contents
 
@@ -14,13 +14,18 @@ The code implements:
 
 The source code of the factorized training and the centralized NPAE [4] can be found in the GRBCM [5] [GitHub repository](https://github.com/LiuHaiTao01/GRBCM).
 
-## Execution
+## Dependencies
 
-Install the [gpml toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/).
+[gpml toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/).
 
 Execute:
+For decentralized GP training
 ```
-demo_2D.m
+demo_2D_train.m
+```
+For decentralized GP prediction
+```
+demo_2D_predn.m
 ```
 
 ## References
