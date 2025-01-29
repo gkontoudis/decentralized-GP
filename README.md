@@ -16,7 +16,7 @@ The source code of the factorized training and the centralized NPAE [4] can be f
 
 ## Dependencies
 
-[gpml toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/).
+[gpml toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/)
 
 Execute:
 For decentralized GP training
