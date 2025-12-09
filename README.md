@@ -1,6 +1,6 @@
 # Decentralized Gaussian Processess for Multi-Agent Systems
 
-Demonstration code of decentralized Gaussian process training [1,2] and prediction [3]. For further details check the paper for decentralized GP training [here](https://www.georgekontoudis.com/publications/Access24_Kontoudis_DecentralizedGPTraining.pdf) and prediction [here](https://www.georgekontoudis.com/publications/ICRA21_Kontoudis_DistributedNestedGaussianProcesses.pdf). A presentation of the decentralized GP training paper can be found [here](https://youtu.be/8Tz8ande5Gk?si=6xbKSXk0W6og94Ww) and prediction [here](https://youtu.be/kVnQ0uNy-sY).
+Demonstration code of decentralized Gaussian process training [1,2] and prediction [3,4]. For further details check the paper for decentralized GP training [here](https://www.georgekontoudis.com/publications/Access24_Kontoudis_DecentralizedGPTraining.pdf) and prediction [here](https://www.georgekontoudis.com/publications/TMLCN25_Kontoudis_DecentralizedGPPrediction.pdf). A presentation of the decentralized GP training paper can be found [here](https://youtu.be/8Tz8ande5Gk?si=6xbKSXk0W6og94Ww) and prediction [here](https://youtu.be/kVnQ0uNy-sY).
 
 ## Contents
 
@@ -11,8 +11,19 @@ The code implements:
 * Decentralized Generalized Analytical Proximal GP Training (DEC-gapx-GP) [1]
 * Decentralized Nested Pointwise Aggregation of Experts (DEC-NPAE) [3]
 * Distributed Nested Pointwise Aggregation of Experts (DIST-NPAE) [3]
+* Decentralized Nested Pointwise Aggregation of Experts * (DEC-NPAE*) [4]
+* Decentralized Product of Experts (DEC-PoE) [4]
+* Decentralized Generalized Product of Experts (DEC-gPoE) [4]
+* Decentralized Bayesian Committee Machine (DEC-BCM) [4]
+* Decentralized Robust Bayesian Committee Machine (DEC-rBCM) [4]
+* Decentralized Generalized Robust Bayesian Committee Machine (DEC-grBCM) [4]
+* Decentralized Neaerest Neighbor Product of Experts (DEC-NN-PoE) [4]
+* Decentralized Neaerest Neighbor Generalized Product of Experts (DEC-NN-gPoE) [4]
+* Decentralized Nearest Neighbor Bayesian Committee Machine (DEC-NN-BCM) [4]
+* Decentralized Nearest Neighbor Robust Bayesian Committee Machine (DEC-NN-rBCM) [4]
+* Decentralized Nearest Neighbor Generalized Robust Bayesian Committee Machine (DEC-NN-grBCM) [4]
 
-The source code of the factorized training and the centralized NPAE [4] can be found in the GRBCM [5] [GitHub repository](https://github.com/LiuHaiTao01/GRBCM).
+The source code of the factorized training and the centralized NPAE [5] can be found in the GRBCM [6] [GitHub repository](https://github.com/LiuHaiTao01/GRBCM).
 
 ## Dependencies
 
@@ -36,9 +47,11 @@ demo_2D_pred.m
 
 [3] G. P. Kontoudis and D. J. Stilwell, “Decentralized Nested Gaussian Processes for Multi-Robot Systems,” in *IEEE International Conference on Robotics and Automation (ICRA)*, 2021.
 
-[4] D. Rullière, N. Durrande, F. Bachoc, and C. Chevalier, “Nested Kriging predictions for datasets with a large number of observations,” *Statistics and Computing*, 2018.
+[4] G. P. Kontoudis and D. J. Stilwell, “Decentralized Nested Gaussian Processes for Multi-Robot Systems,” in *IEEE International Conference on Robotics and Automation (ICRA)*, 2021.
 
-[5] H. Liu, J. Cai, Y. Wang, and Y. S. Ong, “Generalized robust Bayesian committee machine for large-scale Gaussian process regression,” in *International Conference on Machine Learning (ICML)*, 2018.
+[5] D. Rullière, N. Durrande, F. Bachoc, and C. Chevalier, “Nested Kriging predictions for datasets with a large number of observations,” *Statistics and Computing*, 2018.
+
+[6] H. Liu, J. Cai, Y. Wang, and Y. S. Ong, “Generalized robust Bayesian committee machine for large-scale Gaussian process regression,” in *International Conference on Machine Learning (ICML)*, 2018.
 
 ## Notes
 
