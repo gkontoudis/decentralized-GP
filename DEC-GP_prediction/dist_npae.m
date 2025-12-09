@@ -1,12 +1,13 @@
-function [mu,s2,mu_2_hop,s2_2_hop,...
-    iter_dale_convrg_max_min,iter_dale_convrg_max_min_2_hop,...
+function [mu,s2,mu_2_hop,s2_2_hop,... mu_r,s2_r,...
+    iter_dale_convrg_max_min,iter_dale_convrg_max_min_2_hop,...iter_dale_convrg_max_min_r,
     nearest_neighbors]...
-    = dist_npae (nt,K_M_x,k_M_x,iter_dale_1_hop,iter_dale_2_hop,opts,kss,...
-    mu_all,s2_all,models,hyp_lik,thres_dale_max_min,thres_cbnn)
+    = dist_npae (nt,K_M_x,k_M_x,iter_dale_1_hop,iter_dale_2_hop,...iter_dale_r,...
+    opts,kss,mu_all,s2_all,models,hyp_lik,thres_dale_max_min,thres_cbnn)
 
 n = opts.Ms;
 iter_1 = iter_dale_1_hop;
 iter_2 = iter_dale_2_hop;
+% iter_r = iter_dale_r;
 n_all = n;
 thres = thres_cbnn;
 b_M = mu_all';
@@ -42,12 +43,18 @@ for cov=1:nt % nt prediction points
             
             x_real_2_hop(:,1,i) = ones(n,1);
             y_real_2_hop(:,1,i) = ones(n,1);
+
+%             x_real_r(:,1,i) = ones(n,1);
+%             y_real_r(:,1,i) = ones(n,1);
             for j=1:n
                 x_real(j,1,i) = b_M_real(j)/A_real(j,j);
                 y_real(j,1,i) = b_k_real(j)/A_real(j,j);
                 
                 x_real_2_hop(j,1,i) = b_M_real(j)/A_real(j,j);
                 y_real_2_hop(j,1,i) = b_k_real(j)/A_real(j,j);
+
+%                 x_real_r(j,1,i) = b_M_real(j)/A_real(j,j);
+%                 y_real_r(j,1,i) = b_k_real(j)/A_real(j,j);
             end
         end
         
@@ -343,6 +350,13 @@ for cov=1:nt % nt prediction points
             x_last_2_hop_vec(:,i) = (x_real_2_hop(:,iter_dale_convrg_max_min_2_hop(1,cov)-1,i)+x_real_2_hop(:,iter_dale_convrg_max_min_2_hop(1,cov),i))./2;
             y_last_2_hop_vec(:,i) = (y_real_2_hop(:,iter_dale_convrg_max_min_2_hop(1,cov)-1,i)+y_real_2_hop(:,iter_dale_convrg_max_min_2_hop(1,cov),i))./2;
         end
+        %                 for i=1:n
+        %                     x_last_vec(:,i) = (x_real(:,end-1,i)+x_real(:,end,i))./2;
+        %                     y_last_vec(:,i) = (y_real(:,end-1,i)+y_real(:,end,i))./2;
+        %
+        %                     x_last_2_hop_vec(:,i) = (x_real_2_hop(:,end-1,i)+x_real_2_hop(:,end,i))./2;
+        %                     y_last_2_hop_vec(:,i) = (y_real_2_hop(:,end-1,i)+y_real_2_hop(:,end,i))./2;
+        %                 end
         
         x_last = sum(x_last_vec,2)./n;
         y_last = sum(y_last_vec,2)./n;
