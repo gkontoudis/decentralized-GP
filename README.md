@@ -47,7 +47,7 @@ demo_2D_pred.m
 
 [3] G. P. Kontoudis and D. J. Stilwell, “Decentralized Nested Gaussian Processes for Multi-Robot Systems,” in *IEEE International Conference on Robotics and Automation (ICRA)*, 2021.
 
-[4] G. P. Kontoudis and D. J. Stilwell, “Decentralized Nested Gaussian Processes for Multi-Robot Systems,” in *IEEE International Conference on Robotics and Automation (ICRA)*, 2021.
+[4] G. P. Kontoudis and D. J. Stilwell, “Multi-Agent Federated Learning using Covariance-Based Nearest Neighbor Gaussian Processes,” in *IEEE Transactions on Machine Learning in Communications and Networking (TMLCN)*, 2025.
 
 [5] D. Rullière, N. Durrande, F. Bachoc, and C. Chevalier, “Nested Kriging predictions for datasets with a large number of observations,” *Statistics and Computing*, 2018.
 
